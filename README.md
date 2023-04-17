@@ -6,6 +6,10 @@ How Energy, Pollution, and Socioeconomic Factors Affect Health Metrics
 
 ## Description of the data source 
 
+For answering the question as it relates the united states, a few government databases have been used, such as the EPA, the CDC and the US Nuclear Regulatory Commission
+
+As it relates to our global question, we have used Google Cloud BigQuery for our global air quality and The World Bank for GDP statistics
+
 ## Questions the group originally aimed to answer with the data
 
 * Does the presence of a nuclear power plant within a county increase the risks of cancer(s) (e.g. thyroid) for the residents of that county?
