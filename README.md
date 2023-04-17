@@ -6,6 +6,10 @@ Welcome to Team SWAT's final project!
 - **A**fra Panahi
 - **T**eo Anderson
 
+## Communication Protocols
+
+The main form of communication between group members takes place in a private Slack channel, with a pinned thread for active tasks. Additionally, there is a Google document containing minutes from each group meeting, including topics such as our divided responsibilities and upcoming tasks to be completed.
+
 ## Selected Topic and Reasoning for Selection 
 Probing the Links Between Energy Sources, Pollution, and Socioeconomic Factors with Various Health Metrics
 
@@ -31,3 +35,57 @@ On a global scale, the required metrics are often not collected at a granular-en
 - Obesity rates for every country
 - Smoking rates for every country
 - Pollution levels / air quality indices in every country
+
+## Project Progress
+
+### Question 1a:
+
+**Completed**
+- Collect US county midpoint coordinate data
+- Collect nuclear plant data
+- Collect county-by-county cancer data
+- Clean datasets and combine for ML model
+- Run preliminary ML models (Lasso and Random Forest regressors) with each type of cancer as the target
+
+**In Progress**
+- Creating database for the ML data
+
+**Upcoming**
+- Attempt to create a neural network regression model for better results
+- Create visualizations/map in Tableau or JavaScript
+
+### Question 1b:
+
+**Completed**
+- Collect US county midpoint coordinate data
+- Collect fossil fuel plant data
+- Collect county-by-county cancer data
+- Clean datasets and combine for ML model
+- Run preliminary ML models (Lasso and Random Forest regressors) with each type of cancer as the target		
+
+**In Progress**
+- Collecting county-by-county lung and cardiovascular disease data
+- Clean data
+- Add to existing dataset
+- Run ML models with new diseases as targets
+- Creating database for the ML data
+
+**Upcoming**
+- Refine models by removing unnecesary data
+- Attempt to create a neural network regression model for better results
+- Create visualizations/map in Tableau or JavaScript
+
+### Question 2:
+
+**Completed**
+	
+
+**In Progress**
+- Collecting country socioeconomic/health data
+- Creating database for the ML data
+
+**Upcoming**
+- Clean data and combine into one database for ML model
+- Run preliminary ML models
+- Attempt to create a neural network regression model for better results
+- Create visualizations/map in Tableau or JavaScript
