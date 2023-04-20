@@ -1,6 +1,7 @@
 # Teo Links
 [CDC NIH State Cancer Profile](https://statecancerprofiles.cancer.gov/map/map.withimage.php?00&county&001&001&00&0&01&0&1&5&0#results)
-<!---![image](https://user-images.githubusercontent.com/116928193/231055508-d244d52e-3931-4433-98b4-b07ed7c86eb3.png)-->
+[EPA CO2 BY Country](https://www.epa.gov/ghgemissions/global-greenhouse-gas-emissions-data)
+[WHO Air Polution](https://www.who.int/data/gho/data/themes/air-pollution)
 
 # Sean Links
 ### Power Plant Locations and Types
