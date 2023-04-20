@@ -1,6 +1,8 @@
 # Teo Links
 [CDC NIH State Cancer Profile](https://statecancerprofiles.cancer.gov/map/map.withimage.php?00&county&001&001&00&0&01&0&1&5&0#results)
+
 [EPA CO2 BY Country](https://www.epa.gov/ghgemissions/global-greenhouse-gas-emissions-data)
+
 [WHO Air Polution](https://www.who.int/data/gho/data/themes/air-pollution)
 
 # Sean Links
