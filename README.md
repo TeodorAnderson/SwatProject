@@ -78,14 +78,21 @@ On a global scale, the required metrics are often not collected at a granular-en
 ### Question 2:
 
 **Completed**
-	
+- Collecting country socioeconomic/health data
+- Automated Database schema generator
+- Automated Database table population via Python and postgres w/ psycopg2 module
+- Database Schema
+- Database
+- Cleaned data hosted on AWS S3 bucket using boto3 python module
 
 **In Progress**
-- Collecting country socioeconomic/health data
-- Creating database for the ML data
+- Clean data and combine into one dataframe/table for ML model
 
 **Upcoming**
-- Clean data and combine into one database for ML model
 - Run preliminary ML models
 - Attempt to create a neural network regression model for better results
 - Create visualizations/map in Tableau or JavaScript
+
+### Database ERD
+
+![]()
