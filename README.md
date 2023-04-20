@@ -95,4 +95,4 @@ On a global scale, the required metrics are often not collected at a granular-en
 
 ### Database ERD
 
-![]()
+![Health_Metrics_Schema](https://github.com/TeodorAnderson/SwatProject/blob/main/schema.png)
