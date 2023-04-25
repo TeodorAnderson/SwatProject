@@ -84,7 +84,7 @@ On a global scale, the required metrics are often not collected at a granular-en
 - Database Schema
 - Database
 - Cleaned data hosted on AWS S3 bucket using boto3 python module
-- Clean data and combine into one dataframe/table for ML model
+- Clean data and combine into one dataframe/table for ML model. [cleaned_global_data](https://github.com/TeodorAnderson/SwatProject/blob/main/cleaned_data/global_clean/global_health_data.csv)
 - ML Model: Life expectancy predictions per country are made by a prototype ML model.
 - Data set was expanded to include over 149 countries. This was made possible by an API call to the openweathermap historical pollution data API.
 
