@@ -36,6 +36,8 @@ On a global scale, the required metrics are often not collected at a granular-en
 - Obesity rates for every country
 - Pollution levels / air quality indices in every country
 
+Links to data sources can be found in [links.md](https://github.com/TeodorAnderson/SwatProject/blob/main/links.md)
+
 ## Project Progress
 
 ### Question 1a:
