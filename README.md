@@ -84,7 +84,7 @@ On a global scale, the required metrics are often not collected at a granular-en
 - Database Schema
 - Database
 - Cleaned data hosted on AWS S3 bucket using boto3 python module
-- Clean data and combine into one dataframe/table for ML model
+- Clean data and combine into one dataframe/table for ML model. [cleaned_global_data](https://github.com/TeodorAnderson/SwatProject/blob/main/cleaned_data/global_clean/global_health_data.csv)
 - ML Model: Life expectancy predictions per country are made by a prototype ML model.
 - Data set was expanded to include over 149 countries. This was made possible by an API call to the openweathermap historical pollution data API.
 
@@ -105,7 +105,7 @@ Use the data_pipeline.ipynb file to allow for the flow of data through our pipel
 1. Data is read from an S3 bucket into python. Each table is directly stored in python as a dataframe.
 2. An automated schema is generated for each dataframe.
 3. Via sqlAlchemy, each table schema is written to pgAdmin postgres using python. All data corresponding to each table is also written to pgAdmin postgres.
-4. SQL queries can be made using postgres SQL in pgAdmin. Any resulting tables can be transferred back to our data_pipeline.ipynb file.
+4. SQL queries can be made using postgres SQL in pgAdmin. Any resulting tables can be transferred back to our [data_pipeline.ipynb](https://github.com/TeodorAnderson/SwatProject/blob/main/scripts/data_pipeline/data_pipeline.ipynb) script.
 5. SqlAlchemy allows for data to be read from postgres pgAdmin into the data_pipeline.ipynb python script. This allows for aggregated data to be put into ML models.
 
 **In-progress**
