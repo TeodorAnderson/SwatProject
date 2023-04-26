@@ -35,12 +35,12 @@ https://openweathermap.org/api/air-pollution
 ## GDP per capita (2015-2019)
 https://ourworldindata.org/grapher/gdp-per-capita-worldbank?tab=table
 
-## Healthcare spending per capita (2015 to 2019) **Done**
-che_per_capita_usd.csv
+## Healthcare spending per capita (2015 to 2019)
+Healthcare expenditure estimates include goods and services consumed per year.
 https://www.who.int/data/gho/data/indicators/indicator-details/GHO/current-health-expenditure-(che)-per-capita-in-us$
 
 
-## Life Expectancy (only years 2015 and 2019) **Done** (output)
+## Life Expectancy (only years 2015 and 2019)
 https://www.who.int/data/gho/data/indicators/indicator-details/GHO/life-expectancy-at-birth-(years)
 
 
@@ -49,4 +49,4 @@ The poverty rate is the number of people (usually expressed as a percentage) in 
 https://worldpopulationreview.com/country-rankings/poverty-rate-by-country
 
 ## Obesity Data: Mean BMI per country
-
+WHO organization
