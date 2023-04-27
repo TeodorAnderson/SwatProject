@@ -96,12 +96,26 @@ Links to data sources can be found in [links.md](https://github.com/TeodorAnders
 **Upcoming**
 - Create visualizations/map in Tableau or JavaScript
 
+## Description of the data exploration phase of the prokect
+- The exploratory phase of the this project was centered on observing correlations between feature data and the target variable of life expectancy.
+- We picked feature data variables we thought would correlate to prolonged life expectancy such as USD ($) spent on healthcare per capita in each country, obesity data (high BMI values), and GDP per capita.
+- Data sources were compiled either manually or through API calls.
+- Except for pollution data, all global data was compiled through google search. Most data sources came from the WHO.
+- Global air pollution data came from an API call to the Openweathermap Historical Air Pollution API.
+- These data were combined into a single dataframe called global_health_data.
+- Each row of data represents a single country with multiple column fields for various types of socioeconomic and health factors.
+- The compiled dataframe "global_health_data" was then fed into several ML models by only selecting columns with numerical values as
+    the feature data. The target variable was life expectancy. 
 
-### Global Health Metrics Machine Learning:
+## Analysis Phase of the Project: Global Health Metrics Machine Learning:
 - Both cateogorical and continuous life expectancy predictions were made
 - From global_health_data.csv file, three categories low, medium, and high life expectancy were created.
 - LogistcRegression ML model was used for categorical predictions.
     - This model exhibited a balanced accuracy score of 0.94 for predicting life_expectancy groups (low, medium, and high).
+    - Confusion Matrix: this ML model has categorical data predictions and a confusion matrix is applicable. More info on the confusion matrix can be found [here](https://github.com/TeodorAnderson/SwatProject/blob/main/scripts/global_ml_testing/global_ml.ipynb)
+
+    ![confusion_matrix](https://github.com/TeodorAnderson/SwatProject/blob/main/images/confusion_matrix.png)
+
 - RandomForestRegressor ML model was used for continuous data predictions (life expectancy floating pont numbers).
     - This model exhibited an r^2 value of 0.83 for predicting continuous values of life_expectancy.
 - Multiple Linear Regression Model predicted continuous values for life_expectancy as well.
