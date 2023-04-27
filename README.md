@@ -87,14 +87,13 @@ Links to data sources can be found in [links.md](https://github.com/TeodorAnders
 - Database
 - Cleaned data hosted on AWS S3 bucket using boto3 python module
 - Clean data and combine into one dataframe/table for ML model. [cleaned_global_data](https://github.com/TeodorAnderson/SwatProject/blob/main/cleaned_data/global_clean/global_health_data.csv)
-- ML Model: Life expectancy predictions per country are made by a prototype ML model.
+- ML Model: Life expectancy predictions per country are made finalized models.
 - Data set was expanded to include over 149 countries. This was made possible by an API call to the openweathermap historical pollution data API.
 
 **In Progress**
-- Further optimize the global health data ML models to improve accuracy score for life expectancy predictions.
+- None
 
 **Upcoming**
-- Attempt to create a neural network regression model for better results
 - Create visualizations/map in Tableau or JavaScript
 
 
@@ -102,13 +101,11 @@ Links to data sources can be found in [links.md](https://github.com/TeodorAnders
 - Both cateogorical and continuous life expectancy predictions were made
 - From global_health_data.csv file, three categories low, medium, and high life expectancy were created.
 - LogistcRegression ML model was used for categorical predictions.
-    - This model exhibited a balanced accuracy score of 0.89 for predicting life_expectancy groups (low, medium, and high).
+    - This model exhibited a balanced accuracy score of 0.94 for predicting life_expectancy groups (low, medium, and high).
 - RandomForestRegressor ML model was used for continuous data predictions (life expectancy floating pont numbers).
-    - This model exhibited an r^2 value of 0.84 for predicting continuous values of life_expectancy.
+    - This model exhibited an r^2 value of 0.83 for predicting continuous values of life_expectancy.
 - Multiple Linear Regression Model predicted continuous values for life_expectancy as well.
-    - This model exhibited an r^2 value of 0.75 and mean squared error (mse) of 14.1.
-
-
+    - This model exhibited an r^2 value of 0.74 and mean squared error (mse) of 17.9.
 
 
 ### Data Pipeline
@@ -130,4 +127,3 @@ Use the data_pipeline.ipynb file to allow for the flow of data through our pipel
 ### SQL Database
 
 ![SQL_Database](https://github.com/TeodorAnderson/SwatProject/blob/main/database.png)
-
