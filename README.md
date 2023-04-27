@@ -102,11 +102,11 @@ Links to data sources can be found in [links.md](https://github.com/TeodorAnders
 - Both cateogorical and continuous life expectancy predictions were made
 - From global_health_data.csv file, three categories low, medium, and high life expectancy were created.
 - LogistcRegression ML model was used for categorical predictions.
-    - This model exhibited a balanced accuracy score of 0.89 for predicting life_expectancy groups (low, medium, and high).
+    - This model exhibited a balanced accuracy score of 0.94 for predicting life_expectancy groups (low, medium, and high).
 - RandomForestRegressor ML model was used for continuous data predictions (life expectancy floating pont numbers).
-    - This model exhibited an r^2 value of 0.84 for predicting continuous values of life_expectancy.
+    - This model exhibited an r^2 value of 0.83 for predicting continuous values of life_expectancy.
 - Multiple Linear Regression Model predicted continuous values for life_expectancy as well.
-    - This model exhibited an r^2 value of 0.75 and mean squared error (mse) of 14.1.
+    - This model exhibited an r^2 value of 0.74 and mean squared error (mse) of 17.9.
 
 
 
