@@ -102,6 +102,11 @@ Links to data sources can be found in [links.md](https://github.com/TeodorAnders
 - From global_health_data.csv file, three categories low, medium, and high life expectancy were created.
 - LogistcRegression ML model was used for categorical predictions.
     - This model exhibited a balanced accuracy score of 0.94 for predicting life_expectancy groups (low, medium, and high).
+    - Confusion Matrix: this ML model has categorical data predictions and a confusion matrix is applicable. More info on the confusion matrix can be found [here](https://github.com/TeodorAnderson/SwatProject/blob/main/scripts/global_ml_testing/global_ml.ipynb)
+
+    ![confusion_matrix](https://github.com/TeodorAnderson/SwatProject/blob/main/images/confusion_matrix.png)
+
+
 - RandomForestRegressor ML model was used for continuous data predictions (life expectancy floating pont numbers).
     - This model exhibited an r^2 value of 0.83 for predicting continuous values of life_expectancy.
 - Multiple Linear Regression Model predicted continuous values for life_expectancy as well.
