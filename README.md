@@ -96,7 +96,7 @@ Links to data sources can be found in [links.md](https://github.com/TeodorAnders
 **Upcoming**
 - Create visualizations/map in Tableau or JavaScript
 
-## Description of the data exploration phase of the prokect
+## Description of the data exploration phase of the project
 - Centered on observing potential correlations between feature data and the target variable of life expectancy.
 - Feature data included USD ($) spent on healthcare per capita in each country, obesity data (high BMI values), and GDP per capita.
 - Except for pollution data, all global data was compiled through a google search. Most data sources came from the WHO.
