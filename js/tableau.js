@@ -21,7 +21,37 @@ var threedElement = document.getElementById('viz1682825210977');                
  var sevendElement = document.getElementById('viz1682822398346');                    var sevenvElement = sevendElement.getElementsByTagName('object')[0];                    if ( sevendElement.offsetWidth > 800 ) { sevenvElement.style.width='960px';sevenvElement.style.height='607px';} else if ( sevendElement.offsetWidth > 500 ) { sevenvElement.style.width='960px';sevenvElement.style.height='607px';} else { sevenvElement.style.width='100%';sevenvElement.style.height='727px';}                     var scriptElement = document.createElement('script');                    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    sevenvElement.parentNode.insertBefore(scriptElement, sevenvElement);                
 
 
+// Categorical Life Exp 
+var fourdElement = document.getElementById('viz1682826074515');
+var fourvElement = fourdElement.getElementsByTagName('object')[0];
+if ( fourdElement.offsetWidth > 800 ) { fourvElement.style.width='960px';fourvElement.style.height='607px';}
+else if ( divElement.offsetWidth > 500 ) { fourvElement.style.width='960px';fourvElement.style.height='607px';}
+else { fourvElement.style.width='100%';fourvElement.style.height='727px';}
+var scriptElement = document.createElement('script');
+scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';
+fourvElement.parentNode.insertBefore(scriptElement, fourvElement);
 
+
+// Continuous Life Exp
+var fivedElement = document.getElementById('viz1682826897687');
+var fivevElement = fivedElement.getElementsByTagName('object')[0];
+if ( fivedElement.offsetWidth > 800 ) { fivevElement.style.width='960px';fivevElement.style.height='607px';}
+else if ( fivedElement.offsetWidth > 500 ) { fivevElement.style.width='960px';fivevElement.style.height='607px';}
+else { fivevElement.style.width='100%';fivevElement.style.height='727px';}
+var scriptElement = document.createElement('script');
+scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';
+fivevElement.parentNode.insertBefore(scriptElement, fivevElement);
+
+
+// Life Exp Correlations
+var sixdElement = document.getElementById('viz1682827309516');
+var sixvElement = sixdElement.getElementsByTagName('object')[0];
+if ( sixdElement.offsetWidth > 800 ) { sixvElement.style.width='980px';sixvElement.style.height='587px';}
+else if ( sixdElement.offsetWidth > 500 ) { sixvElement.style.width='980px';sixvElement.style.height='587px';}
+else { sixvElement.style.width='100%';sixvElement.style.height='727px';}
+var scriptElement = document.createElement('script');
+scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';
+sixvElement.parentNode.insertBefore(scriptElement, sixvElement);
 
 
 
