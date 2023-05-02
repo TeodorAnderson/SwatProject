@@ -109,8 +109,8 @@ Use the data_pipeline.ipynb file to allow for the flow of data through our pipel
 5. SqlAlchemy allows for data to be read from postgres pgAdmin into the data_pipeline.ipynb python script. This allows for aggregated data to be put into ML models.
 
 
-![Health_Metrics_Schema](https://github.com/TeodorAnderson/SwatProject/blob/main/schema_.png)
+![Health_Metrics_Schema](https://github.com/TeodorAnderson/SwatProject/blob/main/images/schema_.png)
 
 ### SQL Database
 
-![SQL_Database](https://github.com/TeodorAnderson/SwatProject/blob/main/database.png)
+![SQL_Database](https://github.com/TeodorAnderson/SwatProject/blob/main/images/database.png)
