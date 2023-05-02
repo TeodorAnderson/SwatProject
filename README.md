@@ -107,7 +107,7 @@ Links to data sources can be found in [links.md](https://github.com/TeodorAnders
     - Using xgboost, features' importance for each target prediction for fossil fuel power plants were calculated. 
     - Some features like NO<sub>x</sub>, SO<sub>2</sub>, CO<sub>2</sub> pollution seem to have significance in predicting disease rates.
 
-![feat_imp](https://github.com/TeodorAnderson/SwatProject/blob/main/images/cfeat_importance.png)
+![feat_imp](https://github.com/TeodorAnderson/SwatProject/blob/main/images/feat_importance.png)
 
 
 ### Question 2: Global Health Metrics Machine Learning:
