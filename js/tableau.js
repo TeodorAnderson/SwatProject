@@ -18,9 +18,6 @@ var twodElement = document.getElementById('viz1682824906117');                  
 var threedElement = document.getElementById('viz1682825210977');                    var threevElement = threedElement.getElementsByTagName('object')[0];                    if ( threedElement.offsetWidth > 800 ) { threevElement.style.width='960px';threevElement.style.height='607px';} else if ( threedElement.offsetWidth > 500 ) { threevElement.style.width='960px';threevElement.style.height='607px';} else { threevElement.style.width='100%';threevElement.style.height='727px';}                     var scriptElement = document.createElement('script');                    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    threevElement.parentNode.insertBefore(scriptElement, threevElement);     
 
 
- var sevendElement = document.getElementById('viz1682822398346');                    var sevenvElement = sevendElement.getElementsByTagName('object')[0];                    if ( sevendElement.offsetWidth > 800 ) { sevenvElement.style.width='960px';sevenvElement.style.height='607px';} else if ( sevendElement.offsetWidth > 500 ) { sevenvElement.style.width='960px';sevenvElement.style.height='607px';} else { sevenvElement.style.width='100%';sevenvElement.style.height='727px';}                     var scriptElement = document.createElement('script');                    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    sevenvElement.parentNode.insertBefore(scriptElement, sevenvElement);                
-
-
 // Categorical Life Exp 
 var fourdElement = document.getElementById('viz1683000670808');
 var fourvElement = fourdElement.getElementsByTagName('object')[0];
