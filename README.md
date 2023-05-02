@@ -95,7 +95,7 @@ Links to data sources can be found in [links.md](https://github.com/TeodorAnders
 - RandomForestRegressor ML model was used for continuous data predictions (life expectancy floating point numbers).
     - This model exhibited an r^2 value of 0.83 for predicting continuous values of life_expectancy.
 - Multiple Linear Regression Model predicted continuous values for life_expectancy as well.
-    - This model exhibited an r^2 value of 0.74 and mean squared error (mse) of 17.9.
+    - This model exhibited an r^2 value of 0.64 and mean squared error (mse) of 17.9.
 
 
 ### Data Pipeline
