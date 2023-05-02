@@ -51,26 +51,6 @@ scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';
 sixvElement.parentNode.insertBefore(scriptElement, sixvElement);
 
 
-//US ML Model - feat_corr_dash
-var eightdElement = document.getElementById('viz1682991609330');
-var eightvElement = eightdElement.getElementsByTagName('object')[0];
-if ( eightdElement.offsetWidth > 800 ) { eightvElement.style.width='1200px';eightvElement.style.height='607px';}
-else if ( eightdElement.offsetWidth > 500 ) { eightvElement.style.width='1200px';eightvElement.style.height='607px';}
-else { eightvElement.style.width='100%';eightvElement.style.height='727px';}
-var scriptElement = document.createElement('script');
-scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';
-eightvElement.parentNode.insertBefore(scriptElement, eightvElement);
-
-
-//US ML Model - feat_imp_corr_dash
-var ninedElement = document.getElementById('viz1682991483205');
-var ninevElement = ninedElement.getElementsByTagName('object')[0];
-if ( ninedElement.offsetWidth > 800 ) { ninevElement.style.width='1200px';ninevElement.style.height='607px';}
-else if ( ninedElement.offsetWidth > 500 ) { ninevElement.style.width='1200px';ninevElement.style.height='607px';}
-else { ninevElement.style.width='100%';ninevElement.style.height='727px';}
-var scriptElement = document.createElement('script');
-scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';
-ninevElement.parentNode.insertBefore(scriptElement, ninevElement);
 
 
 
