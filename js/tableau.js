@@ -18,11 +18,8 @@ var twodElement = document.getElementById('viz1682824906117');                  
 var threedElement = document.getElementById('viz1682825210977');                    var threevElement = threedElement.getElementsByTagName('object')[0];                    if ( threedElement.offsetWidth > 800 ) { threevElement.style.width='960px';threevElement.style.height='607px';} else if ( threedElement.offsetWidth > 500 ) { threevElement.style.width='960px';threevElement.style.height='607px';} else { threevElement.style.width='100%';threevElement.style.height='727px';}                     var scriptElement = document.createElement('script');                    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    threevElement.parentNode.insertBefore(scriptElement, threevElement);     
 
 
- var sevendElement = document.getElementById('viz1682822398346');                    var sevenvElement = sevendElement.getElementsByTagName('object')[0];                    if ( sevendElement.offsetWidth > 800 ) { sevenvElement.style.width='960px';sevenvElement.style.height='607px';} else if ( sevendElement.offsetWidth > 500 ) { sevenvElement.style.width='960px';sevenvElement.style.height='607px';} else { sevenvElement.style.width='100%';sevenvElement.style.height='727px';}                     var scriptElement = document.createElement('script');                    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    sevenvElement.parentNode.insertBefore(scriptElement, sevenvElement);                
-
-
 // Categorical Life Exp 
-var fourdElement = document.getElementById('viz1682826074515');
+var fourdElement = document.getElementById('viz1683000670808');
 var fourvElement = fourdElement.getElementsByTagName('object')[0];
 if ( fourdElement.offsetWidth > 800 ) { fourvElement.style.width='960px';fourvElement.style.height='607px';}
 else if ( divElement.offsetWidth > 500 ) { fourvElement.style.width='960px';fourvElement.style.height='607px';}
@@ -33,7 +30,7 @@ fourvElement.parentNode.insertBefore(scriptElement, fourvElement);
 
 
 // Continuous Life Exp
-var fivedElement = document.getElementById('viz1682826897687');
+var fivedElement = document.getElementById('viz1683000778830');
 var fivevElement = fivedElement.getElementsByTagName('object')[0];
 if ( fivedElement.offsetWidth > 800 ) { fivevElement.style.width='960px';fivevElement.style.height='607px';}
 else if ( fivedElement.offsetWidth > 500 ) { fivevElement.style.width='960px';fivevElement.style.height='607px';}
@@ -44,7 +41,7 @@ fivevElement.parentNode.insertBefore(scriptElement, fivevElement);
 
 
 // Life Exp Correlations
-var sixdElement = document.getElementById('viz1682827309516');
+var sixdElement = document.getElementById('viz1683000848743');
 var sixvElement = sixdElement.getElementsByTagName('object')[0];
 if ( sixdElement.offsetWidth > 800 ) { sixvElement.style.width='980px';sixvElement.style.height='587px';}
 else if ( sixdElement.offsetWidth > 500 ) { sixvElement.style.width='980px';sixvElement.style.height='587px';}
@@ -54,7 +51,26 @@ scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';
 sixvElement.parentNode.insertBefore(scriptElement, sixvElement);
 
 
+//US ML Model - feat_corr_dash
+var eightdElement = document.getElementById('viz1682991609330');
+var eightvElement = eightdElement.getElementsByTagName('object')[0];
+if ( eightdElement.offsetWidth > 800 ) { eightvElement.style.width='1200px';eightvElement.style.height='607px';}
+else if ( eightdElement.offsetWidth > 500 ) { eightvElement.style.width='1200px';eightvElement.style.height='607px';}
+else { eightvElement.style.width='100%';eightvElement.style.height='727px';}
+var scriptElement = document.createElement('script');
+scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';
+eightvElement.parentNode.insertBefore(scriptElement, eightvElement);
 
+
+//US ML Model - feat_imp_corr_dash
+var ninedElement = document.getElementById('viz1682991483205');
+var ninevElement = ninedElement.getElementsByTagName('object')[0];
+if ( ninedElement.offsetWidth > 800 ) { ninevElement.style.width='1200px';ninevElement.style.height='607px';}
+else if ( ninedElement.offsetWidth > 500 ) { ninevElement.style.width='1200px';ninevElement.style.height='607px';}
+else { ninevElement.style.width='100%';ninevElement.style.height='727px';}
+var scriptElement = document.createElement('script');
+scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';
+ninevElement.parentNode.insertBefore(scriptElement, ninevElement);
 
 
 
