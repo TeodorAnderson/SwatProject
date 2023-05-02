@@ -27,7 +27,7 @@ On a global scale, the required metrics are often not collected at a granular-en
 - Every county in the US and the coordinates of its geographic midpoint
 - Every nuclear power plant currently operating in the US, their geographic coordinates, and their nameplate generation capacity
 - Every fossil fuel (oil, gas, coal, biomass, other) power plant currently operating in the US, their geographic coordinates, their nameplate generation capacity, and their pollution emissions (NO<sub>x</sub>, SO<sub>2</sub>, CO<sub>2</sub>, CH<sub>4</sub>, N<sub>2</sub>O, PM<sub>2.5</sub>)
-- Global dataset pollution data: various pollutions emitions such as co, so2, no2, no, o3, nh3, etc. Obtained from Openweathermap Historical Pollution API.
+- Global dataset pollution data: various pollutions emissions such as co, so2, no2, no, o3, nh3, etc. Obtained from Openweathermap Historical Pollution API.
 - Incidence rates of several types of cancers for each county in the US
 - Incidence rates of various lung and cardiovascular diseases for each county in the US
 - Life expectancy data for every country
@@ -54,16 +54,18 @@ Links to data sources can be found in [links.md](https://github.com/TeodorAnders
 
 ### Question 1b:
 
+**Completed**
 - Collected US county midpoint coordinate data
 - Collected fossil fuel plant data
 - Collected county-by-county cancer data
 - Collected county-by-county lung and cardiovascular disease data
 - Cleaned datasets and combine for ML model
-- ML models (Lasso, RandomForestRegressor, XGBoost) make predictions using feature data and each type of cancer as the target data.	
+- ML models (Lasso, RandomForestRegressor, XGBoost) make predictions using feature data and each type of cancer as the target data.
 
 
 ### Question 2:
 
+**Completed**
 - Collected country socioeconomic/health data
 - Automated Database schema generator
 - Read and Write data to pgAdmin postgres from python and vice versa.
@@ -74,8 +76,13 @@ Links to data sources can be found in [links.md](https://github.com/TeodorAnders
 - ML Model: Life expectancy predictions per country are made finalized models.
 - Data set was expanded to include 149 countries. This was made possible by an API call to the openweathermap historical pollution data API.
 
-
 ## Description of the data exploration phase of the project
+### Questions 1a and 1b
+- Feature data (?) 
+- Target data (cancer per county, cardio death rate and respiratory diseases per county) were collected from NIH/CDC, CDC and American Lung Association
+- Feature and target raw datasets were combined using FIPS county codes to generate the dataset used in the ML for nuclear power plants (SW16 - ML_data_nuclear_cancer.csv) and fossil fuel power plants (SW21 - ML_data_ff_cancer_w_avgs.csv)
+
+### Question 2
 - Centered on observing potential correlations between feature data and the target variable of life expectancy.
 - Feature data included USD ($) spent on healthcare per capita in each country, obesity data (high BMI values), and GDP per capita.
 - Except for pollution data, all global data was compiled through a google search. Most data sources came from the WHO.
@@ -83,7 +90,27 @@ Links to data sources can be found in [links.md](https://github.com/TeodorAnders
 - These data were combined into a single dataframe called global_health_data.
 - Compiled data was fed into several ML models as numerical feature data.
 
-## Analysis Phase of the Project: Global Health Metrics Machine Learning:
+## Analysis Phase of the Project
+### Questions 1a and 1b: Nuclear and fossil fuel power plants in the US:
+- The pairwise pearson correlation coefficients were calculated and features with r >= 0.95 were eliminated.
+![correlation_matrix](https://github.com/TeodorAnderson/SwatProject/blob/main/images/X_corr.png)
+
+- Lasso linear regression, random forest and xgboost.XGBRFRegressor were used to train and predict the targets.
+
+![correlation_matrix](https://github.com/TeodorAnderson/SwatProject/blob/main/images/ML_r2_test_US.png)
+
+- ML outcome:
+    - Lasso exhibited low r^2 values for predicting disease rates based on counties distances from nuclear and fossil fuel power plants
+    - Random forest and xgboost show improved performances in predicting targets based on fossil fuel power plants but still have low r^2 for nuclear power plants
+    
+- Feature importance:
+    - Using xgboost, features' importance for each target prediction for fossil fuel power plants were calculated. 
+    - Some features like NO<sub>x</sub>, SO<sub>2</sub>, CO<sub>2</sub> pollution seem to have significance in predicting disease rates.
+
+![feat_imp](https://github.com/TeodorAnderson/SwatProject/blob/main/images/cfeat_importance.png)
+
+
+### Question 2: Global Health Metrics Machine Learning:
 - Categorical and Continuous life expectancy predictions were made
 - From global_health_data.csv file, three categories: low, medium, and high life expectancy were created.
 - LogistcRegression ML model was used for categorical predictions.
