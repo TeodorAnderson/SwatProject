@@ -44,58 +44,36 @@ Links to data sources can be found in [links.md](https://github.com/TeodorAnders
 ### Question 1a:
 
 **Completed**
-- Collect US county midpoint coordinate data
-- Collect nuclear plant data
-- Collect county-by-county cancer data
+- Collected US county midpoint coordinate data
+- Collected nuclear plant data
+- Collected county-by-county cancer data
+- Collected county-by-county lung and cardiovascular disease data
 - Clean datasets and combine for ML model
-- Run preliminary ML models (Lasso and Random Forest regressors) with each type of cancer as the target
+- ML models (Lasso, RandomForestRegressor, XGBoost) make predictions using feature data and each type of cancer as the target data.	
 
-**In Progress**
-- Creating database for the ML data
-
-**Upcoming**
-- Attempt to create a neural network regression model for better results
-- Create visualizations/map in Tableau or JavaScript
 
 ### Question 1b:
 
-**Completed**
-- Collect US county midpoint coordinate data
-- Collect fossil fuel plant data
-- Collect county-by-county cancer data
-- Clean datasets and combine for ML model
-- Run preliminary ML models (Lasso and Random Forest regressors) with each type of cancer as the target		
+- Collected US county midpoint coordinate data
+- Collected fossil fuel plant data
+- Collected county-by-county cancer data
+- Collected county-by-county lung and cardiovascular disease data
+- Cleaned datasets and combine for ML model
+- ML models (Lasso, RandomForestRegressor, XGBoost) make predictions using feature data and each type of cancer as the target data.	
 
-**In Progress**
-- Collecting county-by-county lung and cardiovascular disease data
-- Clean data
-- Add to existing dataset
-- Run ML models with new diseases as targets
-- Creating database for the ML data
-
-**Upcoming**
-- Refine models by removing unnecesary data
-- Attempt to create a neural network regression model for better results
-- Create visualizations/map in Tableau or JavaScript
 
 ### Question 2:
 
-**Completed**
-- Collecting country socioeconomic/health data
+- Collected country socioeconomic/health data
 - Automated Database schema generator
-- Reading and writing data to pgAdmin postgres from python and vice versa.
+- Read and Write data to pgAdmin postgres from python and vice versa.
 - Database Schema
 - Database
 - Cleaned data hosted on AWS S3 bucket using boto3 python module
 - Clean data and combine into one dataframe/table for ML model. [cleaned_global_data](https://github.com/TeodorAnderson/SwatProject/blob/main/cleaned_data/global_clean/global_health_data.csv)
 - ML Model: Life expectancy predictions per country are made finalized models.
-- Data set was expanded to include over 149 countries. This was made possible by an API call to the openweathermap historical pollution data API.
+- Data set was expanded to include 149 countries. This was made possible by an API call to the openweathermap historical pollution data API.
 
-**In Progress**
-- None
-
-**Upcoming**
-- Create visualizations/map in Tableau or JavaScript
 
 ## Description of the data exploration phase of the project
 - Centered on observing potential correlations between feature data and the target variable of life expectancy.
@@ -129,9 +107,6 @@ Use the data_pipeline.ipynb file to allow for the flow of data through our pipel
 3. Via sqlAlchemy, each table schema is written to pgAdmin postgres using python. All data corresponding to each table is also written to pgAdmin postgres.
 4. SQL queries can be made using postgres SQL in pgAdmin. Any resulting tables can be transferred back to our [data_pipeline.ipynb](https://github.com/TeodorAnderson/SwatProject/blob/main/scripts/data_pipeline/data_pipeline.ipynb) script.
 5. SqlAlchemy allows for data to be read from postgres pgAdmin into the data_pipeline.ipynb python script. This allows for aggregated data to be put into ML models.
-
-**In-progress**
-- Data will be transferred from python to a data visualization software such as Tableau or PowerBI.
 
 
 ![Health_Metrics_Schema](https://github.com/TeodorAnderson/SwatProject/blob/main/schema_.png)
