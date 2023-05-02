@@ -22,7 +22,7 @@ var threedElement = document.getElementById('viz1682825210977');                
 
 
 // Categorical Life Exp 
-var fourdElement = document.getElementById('viz1682826074515');
+var fourdElement = document.getElementById('viz1683000670808');
 var fourvElement = fourdElement.getElementsByTagName('object')[0];
 if ( fourdElement.offsetWidth > 800 ) { fourvElement.style.width='960px';fourvElement.style.height='607px';}
 else if ( divElement.offsetWidth > 500 ) { fourvElement.style.width='960px';fourvElement.style.height='607px';}
@@ -33,7 +33,7 @@ fourvElement.parentNode.insertBefore(scriptElement, fourvElement);
 
 
 // Continuous Life Exp
-var fivedElement = document.getElementById('viz1682826897687');
+var fivedElement = document.getElementById('viz1683000778830');
 var fivevElement = fivedElement.getElementsByTagName('object')[0];
 if ( fivedElement.offsetWidth > 800 ) { fivevElement.style.width='960px';fivevElement.style.height='607px';}
 else if ( fivedElement.offsetWidth > 500 ) { fivevElement.style.width='960px';fivevElement.style.height='607px';}
@@ -44,7 +44,7 @@ fivevElement.parentNode.insertBefore(scriptElement, fivevElement);
 
 
 // Life Exp Correlations
-var sixdElement = document.getElementById('viz1682827309516');
+var sixdElement = document.getElementById('viz1683000848743');
 var sixvElement = sixdElement.getElementsByTagName('object')[0];
 if ( sixdElement.offsetWidth > 800 ) { sixvElement.style.width='980px';sixvElement.style.height='587px';}
 else if ( sixdElement.offsetWidth > 500 ) { sixvElement.style.width='980px';sixvElement.style.height='587px';}
