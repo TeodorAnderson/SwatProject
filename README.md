@@ -41,9 +41,21 @@ Links to data sources can be found in [links.md](https://github.com/TeodorAnders
 
 ## Description of the data exploration phase of the project
 ### Questions 1a and 1b
-- Feature data (?) 
+- Location data for every US county and the various nuclear and fossil fuel power plants were used to calculate the distances between each county and each power plant.
+- Since there are so few nuclear power plants, only the closest plant was recorded, whereas for fossil fuel plants, the closest five plants were recorded.
+- Other metrics were calculated for each power plant, including averaged pollutant values and pollutant values normalized by plant capacity.
 - Target data (cancer per county, cardio death rate and respiratory diseases per county) were collected from NIH/CDC, CDC and American Lung Association
-- Feature and target raw datasets were combined using FIPS county codes to generate the dataset used in the ML for nuclear power plants (SW16 - ML_data_nuclear_cancer.csv) and fossil fuel power plants (SW21 - ML_data_ff_cancer_w_avgs.csv)
+- FIPS county codes were used as a common primary key to combine the county-power plant data with the disease data to generate the dataset used in the machine learning models.
+- Once these datasets were combined, some initial data exploration was performed by creating the following three plots:
+    - Map of US with power plant locations and disease rates
+    - Bar chart correlating disease rates to distance
+    - Scatter plot showing disease rates as function of various pollution metrics
+
+[![US Map](images/us_map.png)](https://public.tableau.com/app/profile/sean.wood1392/viz/PowerPlantsvs_Diseases/Dashboard1)
+
+[![Bar Chart](images/bar_chart.png)](https://public.tableau.com/app/profile/sean.wood1392/viz/CancerRatesvs_DistancefromPowerPlant/Dashboard1)
+
+[![Scatter Plot](images/scatter_plot.png)](https://public.tableau.com/app/profile/sean.wood1392/viz/Diseasevs_PollutionMetrics_16826198984880/Dashboard1)
 
 ### Question 2
 - Centered on observing potential correlations between feature data and the target variable of life expectancy.
@@ -91,12 +103,11 @@ Links to data sources can be found in [links.md](https://github.com/TeodorAnders
 ### Data Pipeline
 Use the data_pipeline.ipynb file to allow for the flow of data through our pipeline.
 
-**Completed**
-1. Data is read from an S3 bucket into python. Each table is directly stored in python as a dataframe.
-2. An automated schema is generated for each dataframe.
-3. Via sqlAlchemy, each table schema is written to pgAdmin postgres using python. All data corresponding to each table is also written to pgAdmin postgres.
-4. SQL queries can be made using postgres SQL in pgAdmin. Any resulting tables can be transferred back to our [data_pipeline.ipynb](https://github.com/TeodorAnderson/SwatProject/blob/main/scripts/data_pipeline/data_pipeline.ipynb) script.
-5. SqlAlchemy allows for data to be read from postgres pgAdmin into the data_pipeline.ipynb python script. This allows for aggregated data to be put into ML models.
+- Data is read from an S3 bucket into python. Each table is directly stored in python as a dataframe.
+- An automated schema is generated for each dataframe.
+- Via sqlAlchemy, each table schema is written to pgAdmin postgres using python. All data corresponding to each table is also written to pgAdmin postgres.
+- SQL queries can be made using postgres SQL in pgAdmin. Any resulting tables can be transferred back to our [data_pipeline.ipynb](https://github.com/TeodorAnderson/SwatProject/blob/main/scripts/data_pipeline/data_pipeline.ipynb) script.
+- SqlAlchemy allows for data to be read from postgres pgAdmin into the data_pipeline.ipynb python script. This allows for aggregated data to be put into ML models.
 
 
 ![Health_Metrics_Schema](https://github.com/TeodorAnderson/SwatProject/blob/main/images/schema_.png)
