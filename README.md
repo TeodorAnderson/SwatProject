@@ -39,43 +39,6 @@ On a global scale, the required metrics are often not collected at a granular-en
 
 Links to data sources can be found in [links.md](https://github.com/TeodorAnderson/SwatProject/blob/main/links.md)
 
-## Project Progress
-
-### Question 1a:
-
-**Completed**
-- Collected US county midpoint coordinate data
-- Collected nuclear plant data
-- Collected county-by-county cancer data
-- Collected county-by-county lung and cardiovascular disease data
-- Clean datasets and combine for ML model
-- ML models (Lasso, RandomForestRegressor, XGBoost) make predictions using feature data and each type of cancer as the target data.	
-
-
-### Question 1b:
-
-**Completed**
-- Collected US county midpoint coordinate data
-- Collected fossil fuel plant data
-- Collected county-by-county cancer data
-- Collected county-by-county lung and cardiovascular disease data
-- Cleaned datasets and combine for ML model
-- ML models (Lasso, RandomForestRegressor, XGBoost) make predictions using feature data and each type of cancer as the target data.
-
-
-### Question 2:
-
-**Completed**
-- Collected country socioeconomic/health data
-- Automated Database schema generator
-- Read and Write data to pgAdmin postgres from python and vice versa.
-- Database Schema
-- Database
-- Cleaned data hosted on AWS S3 bucket using boto3 python module
-- Clean data and combine into one dataframe/table for ML model. [cleaned_global_data](https://github.com/TeodorAnderson/SwatProject/blob/main/cleaned_data/global_clean/global_health_data.csv)
-- ML Model: Life expectancy predictions per country are made finalized models.
-- Data set was expanded to include 149 countries. This was made possible by an API call to the openweathermap historical pollution data API.
-
 ## Description of the data exploration phase of the project
 ### Questions 1a and 1b
 - Feature data (?) 
