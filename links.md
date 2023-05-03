@@ -21,6 +21,15 @@
 ### US County Boundaries
 [OpenDatSoft US County Boundaries](https://public.opendatasoft.com/explore/dataset/us-county-boundaries/table/?disjunctive.statefp&disjunctive.countyfp&disjunctive.name&disjunctive.namelsad&disjunctive.stusab&disjunctive.state_name)
 
+# Afra Links 
+### Cancer rates 2015 to 2019 per county
+https://statecancerprofiles.cancer.gov/incidencerates/index.php?stateFIPS=00&areatype=county&cancer=001&stage=999&race=00&sex=0&age=001&year=0&type=incd&sortVariableName=rate&sortOrder=desc#results
+
+### Cardio vascular realted deaths per county 2017 to 2019
+https://nccd.cdc.gov/DHDSPAtlas/?state=County
+
+### Respiratory trend
+https://www.lung.org/research/trends-in-lung-disease/prevalence-incidence-lung-disease
 
 # Will Links - Global Health Metrics
 
